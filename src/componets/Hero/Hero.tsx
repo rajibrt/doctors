@@ -15,9 +15,9 @@ export default function Hero() {
         <div className={styles.right}>
           <div className={styles.box}>
             <Image
-              width="596"
-              height="622"
-              src="/assets/images/good-looking-smiling-woman-looking-friendly-front.png"
+              width="474"
+              height="748"
+              src="/assets/images/hero-doctor.webp"
               alt=""
             />
           </div>
@@ -32,9 +32,30 @@ export default function Hero() {
             your busy life
           </p>
         </div>
-        <div className={styles.singleCard}>Card 1</div>
-        <div className={styles.singleCard}>Card 1</div>
-        <div className={styles.singleCard}>Card 1</div>
+        <div className={styles.singleCard}>
+          <img src="./assets/icon/ri_customer-service-2-fill.png" alt="" />
+          <h2>Free Consultation</h2>
+          <p>
+            We offer flexible appointment scheduling and free to accommodate
+            your busy life
+          </p>
+        </div>
+        <div className={styles.singleCard}>
+          <img src="./assets/icon/ri_customer-service-2-fill.png" alt="" />
+          <h2>Free Consultation</h2>
+          <p>
+            We offer flexible appointment scheduling and free to accommodate
+            your busy life
+          </p>
+        </div>
+        <div className={styles.singleCard}>
+          <img src="./assets/icon/ri_customer-service-2-fill.png" alt="" />
+          <h2>Free Consultation</h2>
+          <p>
+            We offer flexible appointment scheduling and free to accommodate
+            your busy life
+          </p>
+        </div>
       </div>
     </div>
   );
