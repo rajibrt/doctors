@@ -1,9 +1,10 @@
-import Header from "@/componets/Header/page";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 
 import { Roboto } from "next/font/google";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const roboto = Roboto({
   weight: "400",
@@ -25,9 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="body">
-        <Header />
-        {children}
+      <body className={inter.className}>
+        <div className="container">
+          <div className="wrapper">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );

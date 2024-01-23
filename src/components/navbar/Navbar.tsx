@@ -1,7 +1,7 @@
-import Link from "../../../node_modules/next/link";
-import styles from "./header.module.scss";
+import Link from "next/link";
+import styles from "./navbar.module.scss";
 
-export default function Header() {
+export default function Navbar() {
   const menuItems = [
     {
       id: 1,
@@ -31,7 +31,7 @@ export default function Header() {
   ];
 
   return (
-    <div className={styles.header}>
+    <div className={styles.container}>
       <div className={styles.logo}>
         <h2>Doctors Corner</h2>
       </div>
