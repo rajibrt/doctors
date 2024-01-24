@@ -1,4 +1,6 @@
 import Link from "next/link";
+import AuthLinks from "../authLinks/AuthLinks";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
@@ -42,9 +44,10 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <Link className={styles.button} href={"/contact-us"}>
-        Contact Us
-      </Link>
+      <div className={styles.rightButton}>
+        <ThemeToggle />
+        <AuthLinks />
+      </div>
     </div>
   );
 }

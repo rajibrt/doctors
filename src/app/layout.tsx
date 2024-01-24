@@ -5,6 +5,7 @@ import "./globals.scss";
 import { Roboto } from "next/font/google";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { ThemeContextProvider } from "@/context/ThemeContext";
 
 const roboto = Roboto({
   weight: "400",
@@ -27,13 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="container">
-          <div className="wrapper">
-            <Navbar />
-            {children}
-            <Footer />
+        <ThemeContextProvider>
+          <div className="container">
+            <div className="wrapper">
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
           </div>
-        </div>
+        </ThemeContextProvider>
       </body>
     </html>
   );
